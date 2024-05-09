@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym World</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation -->
+    <nav class="bg-gray-800 text-white p-4 fixed top-0 w-full z-10">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-white text-xl font-bold">Gym World</a>
+            <div class="flex space-x-4">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main content -->
+    <div class="mt-20">
+        <!-- Home Section with Carousel -->
+        <section id="home" class="bg-gray-100 py-20">
+            <div class="container mx-auto text-center">
+                <h1 class="text-4xl font-bold mb-4">Welcome to Gym World</h1>
+                <p class="text-lg">The best place to find everything about gym life.</p>
+            </div>
+
+            <!-- Image Carousel -->
+            <div class="container mx-auto mt-8">
+                <div id="carousel" class="flex justify-center space-x-4"></div>
+            </div>
+        </section>
+
+<!-- About Us Section -->
+<section id="about" class="container mx-auto mt-8 px-4 py-8 bg-white rounded-lg shadow-lg">
+    <div>
+        <h2 class="text-2xl font-bold mb-4">About Us</h2>
+        <p class="text-gray-700 mb-4">At Gym World, we understand the importance of staying fit and healthy, which is why we advocate for bringing the gym experience directly to your home. With our range of high-quality fitness equipment and personalized training programs, we make it easy for you to achieve your fitness goals without ever having to step foot outside.</p>
+        
+        <p class="text-gray-700">Our mission is to provide you with the tools and resources you need to create your own home gym sanctuary, where you can work out on your own schedule and in the comfort of your own space. Whether you're a seasoned fitness enthusiast or just starting out on your fitness journey, Gym World is here to support you every step of the way.</p>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="container mx-auto mt-8 px-4 py-8 bg-white rounded-lg shadow-lg">
+    <div>
+        <h2 class="text-2xl font-bold mb-4">Contact</h2>
+        <form id="contact-form">
+            <div class="mb-4">
+                <label for="name" class="block text-gray-700 font-bold mb-2">Name:</label>
+                <input type="text" id="name" name="name" class="form-input" required>
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700 font-bold mb-2">Email:</label>
+                <input type="email" id="email" name="email" class="form-input" required>
+            </div>
+            <div class="mb-4">
+                <label for="message" class="block text-gray-700 font-bold mb-2">Message:</label>
+                <textarea id="message" name="message" class="form-input" required></textarea>
+            </div>
+            <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Submit</button>
+        </form>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Gym World. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
